@@ -6,5 +6,5 @@ def find_even_count():
 		a = raw_input()
 		num = int(a)
 		if(num%2==0):
-			count++
+			count+=1
 	print count, "even numbers"
