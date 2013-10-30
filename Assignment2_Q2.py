@@ -5,6 +5,6 @@ def find_even_count():
 	while(a != 'q'):
 		a = raw_input()
 		num = int(a)
-		if(num%2==0)
+		if(num%2==0):
 			count++
 	print count, "even numbers"
