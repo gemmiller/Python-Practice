@@ -8,3 +8,5 @@ def find_even_count():
 		if(num%2==0):
 			count+=1
 	print count, "even numbers"
+
+find_even_count()
