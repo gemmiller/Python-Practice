@@ -1,3 +1,4 @@
+#Counts number of even numbers entered till user enters 'q'
 def find_even_count():
 	a = 'v'
 	count = 0
