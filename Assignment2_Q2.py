@@ -1,0 +1,9 @@
+def find_even_count():
+	a = 'v'
+	count = 0
+	while(a != 'q'):
+		a = raw_input()
+		num = int(a)
+		if(num%2==0)
+			count++
+	print count, "even numbers"
