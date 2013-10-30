@@ -4,7 +4,7 @@ def find_perfect(perfect):
 	sum = 1
 	top = math.ceil(math.sqrt(perfect))
 	for i in range(2,int(top)):
-		if(i%perfect==0):
+		if(perfect%i==0):
 			sum+= i + perfect/i
 	if(sum == perfect):
 		print "Perfect number"
