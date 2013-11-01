@@ -12,6 +12,6 @@ def find_perfect(perfect):
 		print "Not a perfect number"
 
 
-a = input()
 
-find_perfect(a)
+
+
