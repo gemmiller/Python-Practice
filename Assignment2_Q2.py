@@ -3,12 +3,12 @@ def find_even_count():
 	a = 'v'
 	count = 0
 	while(a != 'q'):
-		a = raw_input()
+		a = raw_input("Input a number or 'q' to exit.")
 		if(is_number(a)):
 			num = int(a)
 			if(num%2==0):
 				count+=1
-	print count, "even numbers"
+	print count, "\neven numbers"
 
 #checks to see if a value is a number
 def is_number(s):
