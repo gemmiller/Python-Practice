@@ -1,5 +1,5 @@
 from math import ceil , sqrt
-import factors
+
 # Takes an integer and prints of wether it is a perfect number or not
 def find_perfect(perfect):
 	sum = 1
@@ -15,8 +15,9 @@ def find_perfect(perfect):
 
 
 def find_perfectFast(perfect):
-	factors = factors.findPrimeFactors(perfect)
-	if(sum(factors)+1==perfect):
+	import factors
+	facts= factors.findPrimeFactors(perfect)
+	if(sum(facts)+1==perfect):
 		print "Perfect number"
 	else:
 		print "Not a perfect number"
