@@ -17,9 +17,9 @@ def isPrime(n):
 	if n ==1 or n == 0:
 		return False
 	if n == 2:
-		return true
+		return True
 	if n%2 == 0:
-		return false
+		return False
 
 	seive = [True]*(n+1)
 	for i in range(2,n+1):
