@@ -16,8 +16,10 @@ def find_perfect(perfect):
 
 def find_perfectFast(perfect):
 	factors = factors.findPrimeFactors(perfect)
-	(print "Perfect Number") if sum(factors)+1 == perfect else (print "Not a perfect number") 
-
+	if(sum(factors)+1==perfect):
+		print "Perfect number"
+	else:
+		print "Not a perfect number"
 
 
 
