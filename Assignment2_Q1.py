@@ -1,8 +1,9 @@
-import math
+from math import ceil , sqrt
+import factors
 # Takes an integer and prints of wether it is a perfect number or not
 def find_perfect(perfect):
 	sum = 1
-	top = math.ceil(math.sqrt(perfect)) + 1
+	top =ceil(sqrt(perfect)) + 1
 	for i in range(2,int(top)):
 		if(perfect%i==0):
 			sum+= i + perfect/i
@@ -10,6 +11,12 @@ def find_perfect(perfect):
 		print "Perfect number"
 	else:
 		print "Not a perfect number"
+
+
+
+def find_perfectFast(perfect):
+	factors = factors.findPrimeFactors(perfect)
+	print "Perfect Number" if sum(factors)+1 == perfect else print "Not a perfect number" 
 
 
 
